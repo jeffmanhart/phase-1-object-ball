@@ -41,8 +41,8 @@ contains and returns an object nested in the following manner:
   the keys to an object containing their stats. The values for each player's
   names and their stats can be found in the table below. The stats keys should
   be formatted like this:
-  - `"number"`
-  - `"shoe"`
+  - `number`
+  - `shoe`
   - `"points"`
   - `"rebounds"`
   - `"assists"`

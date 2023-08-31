@@ -1,4 +1,4 @@
-console.log('Advanced debugging example running.')
+/*console.log('Advanced debugging example running.')
 debugger
 
 // first, define the function.
@@ -7,11 +7,13 @@ function goodPractices() {
   for (let gameKey in game) {
     // are you ABSOLUTELY SURE what 'gameKey' is?
     // use the debugger to find out!
+    console.log(gameKey)
     debugger
     let teamObj = game[gameKey]
     for (let teamKey in teamObj) {
       // are you ABSOLUTELY SURE what 'teamKey' is?
       // use debugger to find out!
+      console.log(teamKey)
       debugger
 
       // what is 'data' at each loop through out this block?
@@ -25,4 +27,4 @@ function goodPractices() {
 }
 
 // then, call the function so it runs!
-goodPractices()
+goodPractices()*/
