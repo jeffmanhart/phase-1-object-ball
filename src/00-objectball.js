@@ -39,7 +39,7 @@ function gameObject(){
                     shoe:19,
                     points: 26,
                     rebounds: 12,
-                    assists: 6,
+                    assists: 6, 
                     steals: 3,
                     blocks: 8,
                     slamDunks: 5,
@@ -92,7 +92,7 @@ function gameObject(){
                 },
                 "Ben Gordon": {
                     number: 1,
-                    shoe:19,
+                    shoe:15,
                     points: 26,
                     rebounds: 12,
                     assists: 6,
@@ -188,7 +188,6 @@ function bestPlayerForGivenStat(teamName, statName){
     const teamObj = returnTeamObject(teamName);
 
     for (i=0; i< teamObj.length; i++){
-        debugger;
         let newTeamObj = teamObj[i];
         let playerObj = newTeamObj.players
 
@@ -215,12 +214,15 @@ function bestPlayerForGivenStat(teamName, statName){
 }
 function bigShoeRebounds(){
     let biggestShoe = "";
-
+    biggestShoe = bestPlayerForGivenStat("Both", "shoe");
+    const playerStats = returnPlayerStats(biggestShoe[0]);
+    return playerStats.rebounds;
 }
-console.log(bestPlayerForGivenStat("Both","shoe"));
+
 /*console.log(returnPlayerStats("Brendan Haywood"))
 console.log(collectPlayerStatsForGivenTeam("Charlotte Hornets", "number"));
 console.log(teamNames());
 console.log(teamColors("Charlotte Hornets"));
 console.log(shoeSize("Brendan Haywood"));
-console.log(numPointsScored("Alan Anderson"));*/
+console.log(numPointsScored("Alan Anderson"));
+console.log(bigShoeRebounds());*/
